@@ -35,11 +35,13 @@
 
         <main>
             <div class="container">
-                <div v-for="cd in musicCd" class="">
-                    <img :src="cd.poster" alt="cd.title">
-                    <div>{{cd.title}}</div>
-                    <div>{{cd.author}}</div>
-                    <div>{{cd.year}}</div>
+                <div v-for="cd in musicCd" class="single">
+                    <div class="cd-poster">
+                        <img :src="cd.poster" alt="cd.title">
+                    </div>
+                    <div class="cd-title">{{cd.title}}</div>
+                    <div class="cd-author">{{cd.author}}</div>
+                    <div class="cd-year">{{cd.year}}</div>
                 </div>
             </div>
         </main>

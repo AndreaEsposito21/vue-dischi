@@ -5,6 +5,59 @@
     box-sizing: border-box;
 }
 
+/* COMMON */
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+/* HEADER */
+header {
+    background-color: #2e3b46;
+    padding: 20px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+/* MAIN */
+
+main {
+    background-color: #1e2e3c;
+}
+
+.container {
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.single {
+    width: calc( ( 100% / 7 ) - 50px );
+    text-align: center;
+    padding: 10px;
+    background-color: #2e3b46;
+    margin: 20px;
+}
+
+.cd-poster {
+    padding: 20px;
+}
+
+.cd-title {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.cd-author, .cd-year {
+    color: gray;
 }
