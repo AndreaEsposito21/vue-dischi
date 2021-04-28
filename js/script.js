@@ -13,6 +13,11 @@ var app = new Vue ({
             .then((response) => {
                 const result = response.data.response;
                 this.musicCd = result;
+
+                // Bonus 2
+                this.musicCd.sort( (a, b) => 
+                parseInt(a.year) - parseInt(b.year) 
+                );
             });
-    }
+    },
 });
