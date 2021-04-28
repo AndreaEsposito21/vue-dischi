@@ -28,7 +28,23 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
-    <div id="root"></div>
+    <div id="root">
+        <header>
+            <img class="logo" src="img/download.png" alt="spotify-logo">
+        </header>
+
+        <main>
+            <div class="container">
+                <div v-for="cd in musicCd" class="">
+                    <img :src="cd.poster" alt="cd.title">
+                    <div>{{cd.title}}</div>
+                    <div>{{cd.author}}</div>
+                    <div>{{cd.year}}</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>
